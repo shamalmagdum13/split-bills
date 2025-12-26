@@ -1,0 +1,14 @@
+<aside class="sidebar">
+  <div class="logo">
+    <span>SplitBills</span>
+  </div>
+
+  <nav>
+    @for (item of menuItems; track item.id) {
+      <a [routerLink]="item.route" routerLinkActive="active" class="menu-item">
+        <span class="icon">{{ item.icon }}</span>
+        <span class="label">{{ item.label }}</span>
+      </a>
+    }
+  </nav>
+</aside>
